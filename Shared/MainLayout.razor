@@ -1,0 +1,42 @@
+@using Microsoft.AspNetCore.Components.Routing
+@inherits LayoutComponentBase
+
+<div class="min-h-screen flex flex-col">
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-xl font-semibold text-gray-800">Vasudevan Badiadka</a>
+                <div class="flex space-x-6">
+                    <NavLink href="/" class="text-gray-600 hover:text-gray-800 transition-colors" Match="NavLinkMatch.All">Home</NavLink>
+                    <NavLink href="/about" class="text-gray-600 hover:text-gray-800 transition-colors">About</NavLink>
+                    <NavLink href="/experience" class="text-gray-600 hover:text-gray-800 transition-colors">Experience</NavLink>
+                    <NavLink href="/skills" class="text-gray-600 hover:text-gray-800 transition-colors">Skills</NavLink>
+                    <NavLink href="/contact" class="text-gray-600 hover:text-gray-800 transition-colors">Contact</NavLink>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col">
+        @Body
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <p>&copy; 2025. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/vasudevan-badiadka" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vasudevanb" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/vasu_rishi2000" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Project",
+			"type": "shell",
+			"command": "dotnet watch",
+			"args": [],
+			"group": "build",
+			"problemMatcher": [],
+			"isBackground": true
+		}
+	]
+}
